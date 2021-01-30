@@ -8,7 +8,12 @@ module.exports = async function App(context) {
         quickReplies: [
           {
             contentType: 'text',
-            title: '<BUTTON_TEXT>',
+            title: 'Je vais bien, merci.',
+            payload: '<DEVELOPER_DEFINED_PAYLOAD>',
+          },
+          {
+            contentType: 'text',
+            title: 'Non, ça ne va pas.',
             payload: '<DEVELOPER_DEFINED_PAYLOAD>',
           },
         ],
