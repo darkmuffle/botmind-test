@@ -3,8 +3,7 @@ module.exports = async function App(context) {
   if (context.event.isText ) {
     // Case where the sent media is the known string
     if (context.event.text === 'comment vas-tu ?'){
-      await context.sendText('Très bien et vous ?')
-      await context.sendText( {
+      await context.sendText('Très bien et vous ?' ,  {
         quickReplies: [
           {
             contentType: 'text',
@@ -17,7 +16,7 @@ module.exports = async function App(context) {
             payload: '<DEVELOPER_DEFINED_PAYLOAD>',
           },
         ],
-      });
+      })
     }
     // Image media event
     else if (context.event.isImage) {
