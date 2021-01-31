@@ -1,8 +1,8 @@
 module.exports = async function App(context) {
 
 // Case where the sent media is the known string
-if (context.event.text === 'comment vas-tu ?'){
-  await context.sendText('Très bien ?' ,  {
+if (context.event.text === 'Comment vas-tu ?'){
+  await context.sendText('Très bien, et vous?' ,  {
   // Sending back 2 quick reply options
     quickReplies: [
       {
